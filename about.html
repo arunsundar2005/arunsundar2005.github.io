@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About | Arun Sundar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    .about-hero {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .about-hero h1 {
+      font-size: 42px;
+      color: #38bdf8;
+    }
+
+    .about-hero p {
+      color: #94a3b8;
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .about-card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      animation: slideUp 0.8s ease-in-out;
+    }
+
+    .about-card h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    .about-card p {
+      color: #cbd5f5;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+
+<header>
+    <div class="logo">Arun.Eng</div>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+  <!-- Hero Section -->
+  <div class="about-hero">
+    <h1>About Me</h1>
+    <p>
+      A passionate developer, researcher, and engineer dedicated to solving
+      real-world problems through smart technology and innovation.
+    </p>
+  </div>
+
+  <!-- Content Grid -->
+  <div class="about-grid">
+
+    <div class="about-card">
+      <h3>Who I Am</h3>
+      <p>
+        I am someone who thrives on learning, building, and experimenting with
+        advanced technologies. My interest lies at the intersection of artificial
+        intelligence, robotics, embedded systems, and sustainable engineering.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>My Vision</h3>
+      <p>
+        To explore and apply my passion for technology, innovation, and research
+        through continuous learning and creative problem-solving. I aim to build
+        solutions that combine scientific understanding with practical real-world
+        impact.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h3>What Drives Me</h3>
+      <p>
+        Curiosity, problem-solving, and the desire to create meaningful technology
+        motivate me every day. I enjoy working on complex challenges and converting
+        ideas into functional and impactful systems.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>© 2025 Arun Sundar</footer>
+
+</body>
+</html>

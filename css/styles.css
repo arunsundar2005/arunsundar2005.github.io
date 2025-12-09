@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  background: #020617;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+h1 {
+  color: #38bdf8;
+}
+
+.card {
+  background: #020617;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
+
+
+
+@keyframes floatQuote {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+/* Make sure your main content stays above it */
+.hero, section, header, footer {
+  position: relative;
+  z-index: 2;
+}
+
+
+.tagline {
+  font-size: 22px;
+  font-weight: 300;
+  color: #38bdf8;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.tagline {
+  font-size: 22px;
+  font-weight: 300;
+  color: #38bdf8;
+  margin-top: 12px;
+  opacity: 0;
+}

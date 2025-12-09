@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arun Sundar | Portfolio</title>
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      position: relative;
+    }
+
+    header {
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #cbd5f5;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(to right, #020617, #0f172a);
+      padding: 50px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      margin: 15px 0;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 100px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    .about, .skills, .projects, .contact {
+      background: transparent;
+    }
+
+    .skills-list, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      margin-top: 50px;
+    }
+
+    #typing-name {
+    border-right: 3px solid #38bdf8;
+    padding-right: 5px;
+    animation: blink 0.8s infinite;
+    }
+
+    @keyframes blink {
+    50% { border-color: transparent; }
+    }
+
+
+    .quote {
+      font-size: 20px;
+      font-style: italic;
+      color: #cbd5f5;
+      margin-top: 20px;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    .author {
+      display: block;
+      margin-top: 8px;
+      font-size: 16px;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    /* #floating-quotes-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+
+      /* Important changes */
+      /* z-index: 0;              
+      pointer-events: none;
+      background: transparent;
+    } */
+
+    /* .floating-quote {
+      position: absolute;
+      font-size: 16px;
+      color: rgba(203, 213, 245, 0.14); /* very subtle */
+      /* font-style: italic;
+      white-space: nowrap;
+      animation: floatQuote linear infinite;
+    } */ 
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Arun.Eng</div>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div>
+      <h1> <span id="typing-name"></span></h1>
+      <!-- <p>Developer | Engineer | Innovator</p> -->
+      <p class="tagline" id="tagline"></p>
+      <a href="projects.html" class="btn">View My Works</a>
+    </div>
+  </div>
+
+  
+
+  <p class="quote">
+    “I learned very early the difference between knowing the name of something and knowing something.”
+    <br>
+    <span class="author">— Richard Feynman</span>
+  </p>
+
+  <!-- <div id="floating-quotes-container"></div>
+  -->
+
+  <footer>
+    © 2025 Arun Sundar. All Rights Reserved.
+  </footer>
+
+
+  
+
+  <script>
+    const text = "Hi, I am Arun Sundar .";
+    let index = 0;
+    const speed = 150;
+
+    function typeEffect() {
+      if (index < text.length) {
+        document.getElementById("typing-name").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, speed);
+      }
+    }
+
+    typeEffect();
+
+
+
+
+  </script>
+
+<script>
+  // Tagline typewriter animation
+  function typeTagline() {
+    const tagline = "Engineering Curiosity into Reality.";
+    let i = 0;
+    const speed = 70; // typing speed
+    const el = document.getElementById("tagline");
+
+    el.style.opacity = 1; // fade-in effect
+
+    function type() {
+      if (i < tagline.length) {
+        el.innerHTML += tagline.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  }
+
+  // Delay tagline until AFTER your name finishes typing
+  setTimeout(typeTagline, 40000);
+</script>
+
+
+
+</body>
+</html>
