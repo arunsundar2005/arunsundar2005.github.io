@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Achievements | Arun Sundar</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Page Header ===== */
+    .achievements-header {
+      text-align: center;
+      margin-bottom: 40px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .achievements-header h1 {
+      font-size: 42px;
+      color: #38bdf8;
+    }
+
+    .achievements-header p {
+      color: #94a3b8;
+      font-size: 18px;
+      max-width: 750px;
+      margin: auto;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* ===== Scrolling Certificates ===== */
+    .scroll-section {
+      margin: 0 0 60px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: scrollLeft 35s linear infinite;
+    }
+
+    .scroll-card {
+      background: #020617;
+      padding: 18px 26px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      white-space: nowrap;
+      font-size: 16px;
+      color: #e2e8f0;
+      border-left: 4px solid #38bdf8;
+    }
+
+    @keyframes scrollLeft {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ===== Section Title ===== */
+    .section-title {
+      font-size: 30px;
+      color: #38bdf8;
+      margin: 50px 0 20px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 12px;
+    }
+
+    /* ===== Certificate Grid ===== */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .cert-card {
+      background: #020617;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 0.6s ease forwards;
+    }
+
+    .cert-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    }
+
+    .cert-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 6px;
+    }
+
+    .cert-org {
+      font-size: 14px;
+      color: #38bdf8;
+      margin-bottom: 8px;
+    }
+
+    .cert-desc {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Arun.Eng</div>
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="works.html">Works</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    <a href = "achievements.html">Achievements</a>
+    </nav>
+  </header>
+
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="achievements-header">
+    <h1>Achievements & Certifications</h1>
+    <p>
+      Certifications, recognitions, and academic milestones that reflect my
+      continuous learning and engineering journey.
+    </p>
+  </div>
+
+  <!-- Scrolling Key Certificates -->
+  <div class="scroll-section">
+    <div class="scroll-track">
+
+    <div class="scroll-card">
+      <div class="cert-title">IEEE Conference Publication</div>
+      <div class="cert-org">ICDSINC · 2025</div>
+      <div class="cert-desc">
+        Published a research paper titled
+        <b>“Exploring Causal Relationships and Market Trends in the Indian Stock Market.”</b>
+      </div>
+    </div>
+
+    <div class="scroll-card">
+      <div class="cert-title">NPTEL Discipline Star</div>
+      <div class="cert-org">NPTEL · 2025</div>
+      <div class="cert-desc">
+        Awarded the <b>Discipline Star</b> recognition for consistent academic performance
+        and adherence to NPTEL learning standards.
+      </div>
+    </div>
+
+    <div class="scroll-card">
+      <div class="cert-title">NPTEL Motivated Learner Star</div>
+      <div class="cert-org">NPTEL · 2025</div>
+      <div class="cert-desc">
+        Recognized as a <b>Motivated Learner</b> for active participation,
+        course completion, and continuous learning commitment.
+      </div>
+    </div>
+
+    <!-- duplicate for smooth infinite scroll -->
+
+    <div class="scroll-card">
+      <div class="cert-title">IEEE Conference Publication</div>
+      <div class="cert-org">ICDSINC · 2025</div>
+      <div class="cert-desc">
+        Published a research paper titled
+        <b>“Exploring Causal Relationships and Market <br> Trends in the Indian Stock Market.”</b>
+      </div>
+    </div>
+
+    <div class="scroll-card">
+      <div class="cert-title">NPTEL Discipline Star</div>
+      <div class="cert-org">NPTEL · 2025</div>
+      <div class="cert-desc">
+        Awarded the <b>Discipline Star </b> recognition for consistent academic performance <br>
+        and structured learning.
+      </div>
+    </div>
+
+    <div class="scroll-card">
+      <div class="cert-title">NPTEL Motivated Learner Star</div>
+      <div class="cert-org">NPTEL · 2025</div>
+      <div class="cert-desc">
+        Earned the <b>Motivated Learner</b> distinction for sustained engagement <br>
+        across multiple NPTEL courses.
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- All Certificates -->
+  <h2 class="section-title">All Certifications & Achievements</h2>
+
+  <div class="cert-grid">
+
+    <div class="cert-card">
+      <div class="cert-title">IEEE Conference Publication</div>
+      <div class="cert-org">ICDSINC-2025</div>
+      <div class="cert-desc">
+        Published a research paper tittled <b>Exploring Causal Relationships and Market Trends in the Indian Stock Market</b>.
+      </div>
+    </div>
+
+     <div class="cert-card">
+    <div class="cert-title">Data Structures and Algorithms Design</div>
+    <div class="cert-org">NPTEL - IIT Kanpur</div>
+    <div class="cert-desc">
+      Covered algorithmic problem-solving, complexity analysis, recursion,
+      sorting, searching, and fundamental data structures.
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">Deep Learning</div>
+    <div class="cert-org">NPTEL - IIT Ropar</div>
+    <div class="cert-desc">
+      In-depth study of neural networks, backpropagation,
+      optimization techniques, and practical deep learning workflows.
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">Deep Learning for Computer Vision</div>
+    <div class="cert-org">NPTEL - IIT Hyderabad</div>
+    <div class="cert-desc">
+      Focused on CNNs, image classification, object detection,
+      and visual feature extraction using deep learning.
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">Introduction to Large Language Models</div>
+    <div class="cert-org">NPTEL - IIT Madras</div>
+    <div class="cert-desc">
+      Explored transformer architectures, attention mechanisms,
+      prompt engineering, and real-world LLM applications.
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">Introduction to Operating Systems</div>
+    <div class="cert-org">NPTEL - IIT Madras</div>
+    <div class="cert-desc">
+      Studied process management, memory management,
+      file systems, and core OS design principles.
+    </div>
+  </div>
+
+  <div class="cert-card">
+    <div class="cert-title">Microprocessors and Microcontrollers</div>
+    <div class="cert-org">NPTEL - IIT Kharagpur</div>
+    <div class="cert-desc">
+      Femiliarized myself with microcontroller architectures,
+      interfacing, instruction sets, and embedded programming.
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+<footer>© 2025 Arun Sundar</footer>
+
+</body>
+</html>
